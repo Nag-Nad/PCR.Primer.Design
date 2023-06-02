@@ -22,7 +22,7 @@ def CG_content(seq):
 seq = input('please write your sequence: ')
 seq = seq.upper()
 melting_temprature = Tm(seq)
-print('The Tm for this sequence is:', Tm(seq), '°C')
+print('The Tm for this sequence is:', melting_temprature, '°C')
 
 # Add two conditions of a bad and optimal Tm result 
 if Tm(seq) > 65:
@@ -32,7 +32,7 @@ elif 52<Tm(seq)<58:
     
 # Calculate the CG content from the user input
 cg_content = CG_content(seq)
-print('The CG content of this sequence is', CG_content(seq),'%')
+print('The CG content of this sequence is', cg_content,'%')
 
 # Add a condition of an optimal CG content 
 if 40<CG_content(seq)<60:
